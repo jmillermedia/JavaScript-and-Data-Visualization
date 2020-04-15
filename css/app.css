@@ -1,1 +1,16 @@
 /*CSS START*/
+
+body {
+	text-align: center;
+	padding: 25px;
+	font-family: "courier new", Courier, monospace;
+	background-color: lightgrey;
+}
+
+hr {
+	margin: 50px 0;
+}
+
+/*canvas {
+	max-height: 500;
+}*/
