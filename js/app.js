@@ -78,3 +78,65 @@ new Chart(document.getElementById('lineChart'), {
 	}
 
 }});
+
+new Chart(document.getElementById('radarChart'), {
+	type: 'radar',
+	data: {
+		labels: ['Ice Hockey', 'Four/Five "Man"', '500M', '1500M', 'Team', 'Curling', '4X7.5KM Relay', 'Pairs', 'Individual'],
+		datasets: [
+		{
+			label: 'Men (Medal Count)',
+			data: ['1231', '274', '252', '78', '77', '97', '156', '67', '144'],
+			fill: true,
+			borderColor: '#4e79a7',
+		},{
+			label: 'Women (Medal Count)',
+			data: ['305', '0', '91', '57', '13', '75', '45', '67', '78'],
+			fill: true,
+			borderColor: '#ff9da7'
+			}	
+		]
+	},
+	options: {
+		title: {
+			display: true,
+			text: '"Ice Hockey" Shows The Biggest Disparity Compared To Other Events 1924-2014:',
+		
+		animation: {
+			duration: '9000',
+			easing: 'easeInQuart'
+		}
+	}
+
+}});
+
+new Chart(document.getElementById('radarChart2'), {
+	type: 'radar',
+	data: {
+		labels: ['Four/Five "Man"', '500M', '1500M', 'Team', 'Curling', '4X7.5KM Relay', 'Pairs', 'Individual'],
+		datasets: [
+		{
+			label: 'Men (Medal Count)',
+			data: ['274', '252', '78', '77', '97', '156', '67', '144'],
+			fill: true,
+			borderColor: '#4e79a7',
+		},{
+			label: 'Women (Medal Count)',
+			data: ['0', '91', '57', '13', '75', '45', '67', '78'],
+			fill: true,
+			borderColor: '#ff9da7'
+			}	
+		]
+	},
+	options: {
+		title: {
+			display: true,
+			text: 'Other Events That Award More Medals To Men Than Woman 1924-2014:',
+		
+		animation: {
+			duration: '9000',
+			easing: 'easeInQuart'
+		}
+	}
+
+}});
