@@ -13,6 +13,14 @@ In this project, we will be looking at line graphs, bar charts, and pie charts t
 ## Repository Requirements:
 This repo uses [chart.js](https://www.jsdelivr.com/package/npm/chart.js)
 
+## Additional Resources:
+### Stock Photos Taken From:
+[Pexels](https://www.pexels.com/)
+
+[Unsplash](https://unsplash.com/)
+
+[Pixabay](https://pixabay.com/)
+
 ## MIT License:
 MIT License
 

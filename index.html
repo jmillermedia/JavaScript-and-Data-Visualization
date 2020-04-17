@@ -6,22 +6,47 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
+	<div id="wrapper">
 
-	<h1>Winter Olympic Data 1924-2014</h1>
-	<h2>Disparity Of Medals Between Genders</h2>
-	<hr>
-	<canvas id="pieChart"></canvas>
-	<hr>
-	<canvas id="advancedChart"></canvas>
-	<hr>
-	<canvas id="lineChart"></canvas>
-	<hr>
-	<canvas id="radarChart"></canvas>
-	<hr>
-	<canvas id="radarChart2"></canvas>
+	<header id="header">
+		<img id="mainLogo" src="images/logo.svg" alt="Olympic Logo Biased">
+		<p>My intention with this data is to show that there is a disparity between the amount of competitions between men and women. While the gap has been closing over the last century, there is still room for improvement for complete equality. I’ve decided to use the medal count as opposed to the actual events on the chance that some of the events may have been added or removed over the course of this portion of time of the Olympics. This goes under the understanding that every year each event has an outcome where 3 medals are awarded. Thus, the total medals awarded in the timeframe more accurately represents the difference of competitions of both men and women year over year.<br><br>In this project, we will be looking at line graphs, bar charts, and pie charts to see how over time, the disparity is closing, but still not at an even 50/50 split. </p>
+	</header>
 
+	<article class="chartSpace">
+		<h2>Total Medals Awarded Between 1924-2014 Split By Genders:</h2>
+			<canvas id="pieChart"></canvas>
+				<p class="wordSpace">In this pie chart we’re looking at the total medals awarded between 1924 and 2004. Throughout that course of time, there were a total of 3,944 medals awarded to men and 1,826 medals awarded to women. The gender bias was stronger at the beginning of the century, and we will look at that in future charts.</p>
+	</article>
+
+	<article class="chartSpace">
+		<h2>Medals Awards To Each Gender Separated By Year:</h2>
+			<canvas id="advancedChart"></canvas>
+				<p class="wordSpace">In this bar chart we can see the amount of medals awarded to each gender by year. In 1924-1392, women were awarded a total of 6 medals. This means that there was a maximum of two events per year of the Olympics for that time. Meanwhile, men received an average of 101 medals per Olympic year. This means 94% of the medals awarded during that time were given to men over women.</p>
+	</article>
+
+	<article class="chartSpace">
+		<h2>Medal Disparity Percentage Within Genders Over Time:</h2>
+			<canvas id="lineChart"></canvas>
+				<p class="wordSpace">Speaking of percentages, let's look at the disparity of medals awarded using percentages. The biggest disparity took place in 1924 with 94.92% of medals awarded to men. The most notable jumps to equality took place in 1956-1960 and 1994-1998 were we saw a closing of the gap by nearly 10%. Since 1998, the pace of the difference has slowed and we’ve yet to see a 50/50 split in events/medals awarded.</p>
+	</article>
+	
+	<article class="chartSpace">
+		<h2>Events With The Largest Disparity</h2>
+		<div id="radarSpace">
+			<canvas id="radarChart"></canvas>
+			<canvas id="radarChart2"></canvas>
+		</div>
+					<p class="wordSpace">In this radar chart we are examining the medals awarded by event. This data includes all medals awarded throughout the timeframe we’re looking at. In the first chart, we’re looking at the biggest disparity, which is Ice Hockey. From 1924-2014 men were awarded 1231 medals whereas women were awarded 305 medals. In the second chart, we’ve removed Ice Hockey to close the gap and take a closer look at some of the events with the biggest disparities. Pairs is shown as an example of what a 50/50 split would look like.</p>
+	</article>
+
+	<article>
+		<h2>Conclusion:</h2>
+			<p>In these examples, we’ve seen that while the Olympics have improved the gender bias towards men from 1924-2014, there is still a significant gap that should be closed. Every event held by the Olympics should have a category for each gender, allowing men and women to compete equally.</p>
+	</article>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+</div>
 </body>
 </html>
