@@ -13,7 +13,7 @@ new Chart(document.getElementById('pieChart'), {
 	},
 	options: {
 		title: {
-			display: true,
+			display: false,
 			text: 'Total Medals Awarded Between 1924-2014 Split By Genders:'
 		}
 	}
@@ -37,7 +37,7 @@ new Chart(document.getElementById('advancedChart'), {
 	},
 	options: {
 		title: {
-			display: true,
+			display: false,
 			text: 'Medals Awards To Each Gender Separated By Year:',
 		
 		animation: {
@@ -56,19 +56,19 @@ new Chart(document.getElementById('lineChart'), {
 		{
 			label: 'Men (Percentage)',
 			data: ['94.92', '92.26', '94.83', '91.67', '89.29', '86.76', '82', '73.47', '75.14', '76.88', '77.50', '75.71', '76.61', '75.68', '76.14', '69.54', '67.64', '57.72', '56.76', '56.31', '55.95', '55.56'],
-			fill: false,
+			fill: true,
 			borderColor: '#4e79a7',
 		},{
 			label: 'Women (Percentage)',
 			data: ['5.08', '6.74', '5.17', '8.33', '10.71', '13.24', '18', '26.53', '24.86', '23.12', '22.50', '22.29', '23.39', '24.32', '23.86', '30.46', '32.36', '42.28', '43.24', '43.69', '44.05', '44.44'],
-			fill: false,
+			fill: true,
 			borderColor: '#ff9da7'
 			}	
 		]
 	},
 	options: {
 		title: {
-			display: true,
+			display: false,
 			text: 'Medal Disparity Percentage Within Genders Over Time:',
 		
 		animation: {
@@ -99,7 +99,7 @@ new Chart(document.getElementById('radarChart'), {
 	},
 	options: {
 		title: {
-			display: true,
+			display: false,
 			text: '"Ice Hockey" Shows The Biggest Disparity Compared To Other Events 1924-2014:',
 		
 		animation: {
@@ -130,7 +130,7 @@ new Chart(document.getElementById('radarChart2'), {
 	},
 	options: {
 		title: {
-			display: true,
+			display: false,
 			text: 'Other Events That Award More Medals To Men Than Woman 1924-2014:',
 		
 		animation: {

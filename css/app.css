@@ -2,15 +2,159 @@
 
 body {
 	text-align: center;
-	padding: 25px;
-	font-family: "courier new", Courier, monospace;
-	background-color: lightgrey;
+	padding: 0px;
+	margin: 0px;
+	font-family: "productSans";
 }
 
-hr {
-	margin: 50px 0;
+@font-face {
+  font-family: productSans;
+  src: url(../fonts/ProductSans-Regular.otf);
 }
 
-/*canvas {
-	max-height: 500;
-}*/
+h2 {
+	font-size: 20px;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#mainLogo {
+	width: 400px;
+	margin: 0px auto;
+}
+
+#header {
+	margin: 0px;
+	width: 100%;
+}
+
+#header p {
+/*	width: 80%;*/
+	margin: 0px auto;
+	margin-top: -32px;
+	padding: 16px;
+	text-align: justify;
+}
+
+.chartSpace {
+	margin: 0px auto;
+	border-bottom: 2px #ccc solid;
+	margin-bottom: 32px;
+	padding-bottom: 32px;
+/*	width: 600px;*/
+}
+
+
+.chartSpace h2 {
+	display: block;
+}
+
+.chartSpace canvas {
+	width: 80%;
+	padding-bottom: 32px;
+	display: flex;
+}
+
+.chartSpace p {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.wordSpace {
+	text-align: justify;
+}
+
+#radarSpace {
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	margin-left: -10%;
+}
+
+#radarspace canvas {
+	height: 250px;
+}
+
+#conclusion {
+	display: flex;
+	width: 640px;
+	flex-direction: row;
+	text-align: justify;
+	margin: 0px auto;
+}
+
+#conclusion img {
+	width: 239px;
+	height: 300px;
+	margin-bottom: 32px;
+	margin-left: 32px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#conclusion p {
+	margin-top: 0px;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+@media SCREEN and (max-width: 1000px) {
+
+#wrapper {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.chartSpace {
+	margin: 0px auto;
+	padding: 0px;
+	border-bottom: 2px #ccc solid;
+	width: 90%;
+}
+
+#header p {
+	width: 80%;
+	margin: 0px auto;
+	margin-top: -32px;
+}
+
+.chartSpace p {
+	width: 100%;
+	margin: 0px auto;
+	padding-bottom: 32px;
+}
+
+
+#radarSpace {
+	width: 100%;
+	flex-direction: column;
+	margin-left: 0px;
+	margin: 0px auto;
+	}
+
+#radarSpace canvas {
+	margin: 0px auto;
+	padding: 0px;
+	}
+
+#conclusion {
+	width: 100%;
+	flex-direction: column;
+	margin: 0px auto;
+	justify-content: center;
+	align-items: center;
+}
+
+#conclusion img {
+	margin: 0px;
+}
+
+#conclusion p {
+	margin-top: 32px;
+}
+
+
+} /*END MEDIA QUERY*/
+
