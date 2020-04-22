@@ -67,17 +67,17 @@ h2 {
 	text-align: justify;
 }
 
-#radarSpace {
+/*#radarSpace {
 	width: 600px;
 	display: flex;
 	flex-direction: row;
 	margin-left: -10%;
-}
+}*/
 
-#radarspace canvas {
+/*#radarspace canvas {
 	height: 250px;
 }
-
+*/
 #conclusion {
 	display: flex;
 	width: 640px;
@@ -125,19 +125,6 @@ h2 {
 	margin: 0px auto;
 	padding-bottom: 32px;
 }
-
-
-#radarSpace {
-	width: 100%;
-	flex-direction: column;
-	margin-left: 0px;
-	margin: 0px auto;
-	}
-
-#radarSpace canvas {
-	margin: 0px auto;
-	padding: 0px;
-	}
 
 #conclusion {
 	width: 100%;
